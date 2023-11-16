@@ -1,0 +1,141 @@
+/*CSS page*/
+/*New Css Project*/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/*
+  Css code writen here...
+*/
+/*Body section...@*/
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+ background-color: rgb(185, 169, 169);
+  background-repeat: no-repeat;
+  opacity: 1;
+  overflow: hidden;
+
+
+
+}
+
+.nav_ul {
+  list-style-type: none;
+  display: flex;
+  padding: 18px 4px;
+  background-size: 400% 400%;
+  background-image: linear-gradient(-45deg, #5c52528f, #2e202055, #4d3d43,#5c52528f);
+  animation: 12s myGradient infinite;
+  border-radius: 40px;
+  box-shadow: 3px 3px 20px #fff;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.dropdown>li{
+list-style: none;
+    /* display: inline-block; Adjust this based on your design */
+    margin-right: 20px;
+}
+/* creating wave effect */
+@keyframes myGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50%{
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.nav-li> a {
+  color: #fff;
+  text-decoration: none;
+  padding: 45px 45px;
+  font-family: verdana;
+  font-weight: lighter;
+  font-size: 24px;
+  letter-spacing: 1px;
+  opacity: 0.9;
+}
+
+.navigation {
+  margin-top: 20px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media(max-width: 767px) {
+
+  .nav-li>a {
+    padding: 34px 34px;
+    font-size: 23px;
+    font-weight: lighter;
+  }
+
+}
+
+.dropdown a{
+ color: #fff;
+    font-size: large;
+    text-decoration: none;
+}
+
+.dropdown {
+
+  width: 200px;
+  height: 100px;
+  color: #fff;
+  display: none;
+  font-family: verdana;
+  margin-top: 18.399999px;
+
+  border-radius: 25px;
+  line-height: 200%;
+  border-top-right-radius: 0px;
+  font-weight: bold;
+  position: absolute;
+  transition: 1s;
+  background-size: 400% 400%;
+  border-top-left-radius: 0px;
+  background-image: linear-gradient(-45deg, #030303, #2e202055, #4d3d43,#5c52528f);
+  animation: 12s myGradient infinite;
+
+}
+
+.home-menu{
+    margin-left: 50px;
+}
+
+#anotherFunction{
+    visibility: hidden;
+}
+.Active {
+  transition: 2s;
+  margin-top: 1px;
+}
+@media only screen and (max-width: 600px) {
+    /* Styles for small screens, touch devices */
+    .home:active {
+      /* Touch-friendly styles */
+      display: block;
+    }
+  }
+
+.nav-type li:hover .home-menu {
+    display: block;
+  }
+.calendar{
+    width: 500px;;
+    height: 500px;
+}
